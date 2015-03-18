@@ -17,18 +17,9 @@
 //= require_tree .
 $(document).ready(function() {
   $('.series').mouseenter(function() {
-    $(this).css('background-color', '#428bca').css('color', 'white')
-  })
-  $('.series').mouseleave(function() {
-    $(this).css('background-color', '#ffffff').css('color', 'inherit')
-  })
-
-  $('.series h3').mouseenter(function() {
-    $(this).css('color', 'white')
     $('.airdate', this).css('color', 'white')
   })
-  $('.series h3').mouseleave(function() {
-    $(this).css('color', 'inherit')
-    $('.airdate', this).css('color', 'inherit')
+  $('.series').mouseleave(function() {
+    $('.airdate', this).css('color', '#777777')
   })
 })

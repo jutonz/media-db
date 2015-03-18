@@ -13,14 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+$page-width: 1024px;
+
 .content {
   margin-right: auto;
   margin-left: auto;
-  width: 1024px;
+  width: $page-width;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .header .content { 
-  width: 1024px;
+  width: $page-width;
 }
