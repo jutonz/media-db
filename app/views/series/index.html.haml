@@ -1,4 +1,4 @@
 %h1 Series
 - @series.each do |series|
-  = render series
+  = render partial: 'series/series_tile', locals: { series: series }
 = link_to 'Add Series', new_series_path, class: 'btn btn-large btn-primary'
